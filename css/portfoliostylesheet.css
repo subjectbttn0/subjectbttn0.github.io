@@ -1,0 +1,478 @@
+/*
+	Name: Matthew Carman
+	Date: 11/9/2021
+	File Name: portfoliostylesheet.css
+*/
+
+/*
+	This will reset the style rules for all pages in the website.
+*/
+body, header, nav, main, footer, div, img, ul, figure, figcaption, article, table, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+body {
+	background-color: #000;
+}
+/*
+	These are the style rules for the header element.
+*/
+
+header {
+	color: #fff;
+	text-align: center;
+}
+
+header img {
+	max-width: 100%;
+	display: block;
+	box-shadow: 5px 10px 8px #fff;
+}
+
+figure {
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
+	color: #fff;
+}
+
+/*
+	These are the style rules for the hambuger menu.
+*/
+
+.mobile-nav a {
+	background-color: #0000ff;
+	color: #fff;
+	font-family: Cambria, "Times New Roman", serif;
+	text-align: center;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.mobile-nav {
+	display: block;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
+}
+
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	background-color: #0000ff;
+}
+
+nav li {
+	font-size: 1.25em;
+	font-family: Cambria, "Times New Roman", serif;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*
+	These are the style rules for the main element.
+*/
+main {
+	background-color: #fff;
+	border: 1px solid #FAFAD2;
+	border-radius: 2px;
+}
+
+article {
+	margin-left: 1%;
+}
+
+/*
+	These are the style rules for the footer element.
+*/
+footer {
+	text-align: center;
+	font-size: 0.80em;
+	color: #ffff00;
+}
+
+footer a {
+	text-align: center;
+	color: #ffff00;
+	text-decoration: none;
+}
+
+#aboutme {
+	text-align: center;
+	list-style-type: none;
+}
+
+#aboutme ul {
+	list-style-type: none;
+}
+
+#aboutme li {
+	padding: 1%;
+}
+
+#contact {
+	text-align: center;
+	list-style-type: none;
+}
+
+#contact ul {
+	color: #0000ff;
+	list-style-type: none;
+}
+
+#contact li {
+	padding: 1%
+}
+
+.map {
+	border: 4px solid #000;
+}
+
+.news {
+	color: #FAFAD2;
+}
+
+.rumors {
+	color: #FAFAD2;
+}
+
+.content {
+	color: #FAFAD2;
+}
+/*
+	These are the style rules for the form.
+*/
+#form {
+	margin-top: 2%;
+	background-color: #FFD700;
+	padding: 2%;
+}
+
+#form h5 {
+	text-align: center;
+}
+
+fieldset, input, select, textarea {
+	margin-bottom: 2%;
+	margin: 0 auto;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+label {
+	display: block;
+	padding-top: 2%;
+}
+
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	font-size: 0.90em;
+	background-color: #B3B3B3;
+}
+/*
+	These are the style rules for the table.
+*/
+#mobile {
+	display: block;
+}
+
+#tablet-desktop {
+	display: none;
+}
+
+table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 90%;
+}
+	
+caption {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 1%;
+}
+	
+th, td {
+	border: 1px solid #000;
+	padding: 1%;
+}
+	
+th {
+	background-color: #FFD700;
+	color: #000;
+	font-size: 1.15em;
+}
+
+#social {
+	position: absolute;
+	right: 0;
+}
+
+#social img {
+	max-width: 25%;
+}	
+
+
+/*
+	This is where the tablet media query begins.
+*/
+@media screen and (min-width: 481px) {
+	header img {
+		margin: 0 auto;
+		box-shadow: 5px 10px 8px #fff;
+	}
+	
+	.mobile-nav {
+		display: none;
+	}
+	
+	.tablet-desktop {
+		display: block;
+	}
+	
+	nav {
+		padding-bottom: 1%;
+		
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+		background-color: #0000ff;
+	}
+	
+	nav li {
+		display: inline-block;
+		font-size: 1.25em;
+		font-weight: bold;
+		border-top: none;
+		border-right: 1px solid #fff;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav a {
+		text-align: right;
+		border-right: 1px;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	article {
+		margin-left: 5%;
+	}
+	
+	#contact ul {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	/*
+		These are the style rules for the form when viewed on a tablet.
+	*/
+	#form {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	#form h5 {
+		text-align: center;
+		font-size: 1.25em;
+	}
+	
+	/*
+		These are the style rules for the table when viewed on a tablet.
+	*/
+	#mobile {
+		display: none;
+	}
+	
+	#tablet-desktop {
+		display: block;
+	}
+	
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		padding: 1%;
+	}
+	
+	th {
+		background-color: #FFD700;
+		color: #000;
+		font-size: 1.2em;
+	}
+	
+	.map {
+		border: 4px solid #000;
+		margin: 0 auto;
+	}
+	
+}
+
+/*
+	This is where the desktop media query begins.
+*/
+@media screen and (min-width: 769px) {
+	header {
+		position: static;
+		text-align: center;
+	}
+	
+	header img {
+		margin: 0 auto;
+		box-shadow: 5px 10px 8px #fff;
+	}
+	
+	.mobile-nav {
+		display: none;
+	}
+	
+	.tablet-desktop {
+		display: block;
+	}
+	
+	nav {
+		padding-bottom: 1%;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	nav li {
+		display: inline-block;
+		border-top: none;
+		font-size: 1.5em;
+		font-weight: bold;
+		border-right: 1px solid #fff;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav a {
+		text-align: right;
+		border-right: 1px;
+	}
+	
+	
+	nav a:hover {
+		color: #FFD700;
+		background-color: #87CEFA;
+		transform: scale(1.2);
+	}
+	
+	article {
+		margin-left: 5%;
+	}
+	
+	#contact ul {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	
+	/*
+		These are the style rules for the table when viewed on a desktop.
+	*/
+	#form {
+		margin: 0 auto;
+		width: 70%;
+	}
+	
+	#form h5 {
+		text-align: center;
+		font-size: 1.5em;
+	}
+	
+	/*
+		These are the style rules for the table when viewed on a desktop.
+	*/
+	#mobile {
+		display: none;
+	}
+	
+	#tablet-desktop {
+		display: block;
+	}
+	
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 80%;
+	}
+	
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		padding: 1%;
+	}
+	
+	th {
+		background-color: #FFD700;
+		color: #000;
+		font-size: 1.2em;
+	}
+	
+	.map {
+		border: 4px solid #000;
+		margin: 0 auto;
+	}
+}
+

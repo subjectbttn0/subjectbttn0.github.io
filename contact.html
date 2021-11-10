@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Matthew Carman
+	File Name: contact.html
+	Date: 11/9/2021
+-->
+<html lang="en">
+<head>
+	<title>Contact Me</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/portfoliostylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This page displays multiple methods that users can contact me.">
+	<link href="https://fonts.googleapis.com/css2?family=Yaldevi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="news.html" class="news">News Articles</a>
+			<a href="rumors.html" class="rumors">Rumor Articles</a>
+			<a href="showcase.html" class="content">Content Showcase</a>
+			<a href="about.html">About Me</a>
+			<a href="contact.html">Contact Me</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
+	<header id="portfolio-logo">
+		<figure>
+			<img src="images/matthewcarman2021.jpg" alt="Photo of Matthew Carman">
+			<figcaption><h1>Matthew Carman</h1></figcaption>
+			<figcaption><h2>I'll make sure to bring the most accurate gaming news possible!</h2></figcaption>
+		</figure>
+	</header>
+	
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="news.html" class="news">News Articles</a></li>
+			<li><a href="rumors.html" class="rumors">Rumor Articles</a></li>
+			<li><a href="showcase.html" class="content">Content Showcase</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
+	
+	<!--
+		The main element will display my contact information, so that users can contact me if they have any questions.
+	-->
+	<main>
+		<h4>Contact me by using one of these contact methods or by filling out the form on this page.</h4>
+		
+		<div id="contactaudio">
+			<audio controls>
+				<source src="media/ContactMeAudio.mp3" type="audio/mp3">
+				<source src="media/ContactMeAudio.ogg" type="audio/ogg">
+				<p>Your browser does not support the audio element.</p>
+			</audio>
+		</div>
+		
+		<div id="contact">
+			
+			<ul>
+				<li>Email: mmc1096@student.phsc.edu</li>
+				
+				<li>School: Pasco-Hernando State College Porter Campus</li>
+				
+				<li>Phone: (631)504-2421</li>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.479770098586!2d-82.33074848460785!3d28.192732710599444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b1398bbed1e1%3A0x2327c53d952802a0!2sPasco-Hernando%20State%20College%20Porter%20Campus%20at%20Wiregrass%20Ranch!5e0!3m2!1sen!2sus!4v1631491001230!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" class="map"></iframe>
+			</ul>
+		
+		</div>
+		
+		<div id="contactform">
+			<h5>You can complete this form to contact me this way.</h5>
+			
+			<!--
+				This form would provide another method of contacting me.
+			-->
+			<form class="form">
+				<fieldset>
+					<legend>User Info</legend>
+					
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" required>
+					
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" required>
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="inquiry">Inquiry:</label>
+					<textarea id="inquiry" name="inquiry" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="Submit" class="btn">
+			</form>
+		</div>
+	</main>
+	
+	<footer>
+		<a href="mailto:mmc1096@student.phsc.edu">mmc1096@student.student.phsc.edu</a>
+		
+		<div id="social">
+			<a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="www.twitter.com"></a>
+			
+			<a href="https://www.youtube.com" target="_blank"><img src="images/youtube-logo.png" alt="www.youtube.com"></a>
+		</div>
+	</footer>
+	
+	<script src="scripts/portfolioscript.js"></script>
+	
+</body>
+
+</html>
